@@ -16,6 +16,7 @@ body {
 
 .container {
     width: 800px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -95,3 +96,131 @@ main {
         }
     }
 }
+
+section {
+    height: 45rem;
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url("../img/rey-standing.jpg") no-repeat center center/cover;
+    padding: 2rem;
+
+    .character {
+        margin-right: 0.7rem;
+    }
+
+    .character1,
+    .character7 {
+        height: 7rem;
+        width: 7rem;
+
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .character2,
+    .character6 {
+        height: 9rem;
+        width: 9rem;
+
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .character3,
+    .character5 {
+        height: 11rem;
+        width: 11rem;
+
+        position: relative;
+        bottom: 1rem;
+    }
+
+    .character1 {
+        background: url("../img/luke.jpg") no-repeat center center/cover;
+        border-radius: 50%;
+    }
+
+    .character2 {
+        background: url("../img/leia.jpg") no-repeat center center/cover;
+        border-radius: 50%;
+    }
+
+    .character3 {
+        background: url("../img/finn.jpg") no-repeat center center/cover;
+        border-radius: 50%;
+    }
+
+    .character4 {
+        background: url("../img/rey.jpg") no-repeat center center/cover;
+        border-radius: 50%;
+        height: 13rem;
+        width: 13rem;
+    }
+
+    .character5 {
+        background: url("../img/kylo.jpg") no-repeat center center/cover;
+        border-radius: 50%;
+    }
+
+    .character6 {
+        background: url("../img/poe.jpg") no-repeat center center/cover;
+        border-radius: 50%;
+    }
+
+    .character7 {
+        background: url("../img/bb8.jpg") no-repeat center center/cover;
+        border-radius: 50%;
+    }
+}
+
+.ratings {
+    background: lightgray;
+
+    &__heading {
+        padding: 3rem;
+        font-size: 4rem;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    &__graphics {
+        display: flex;
+        align-items: flex-end;
+        padding: 3rem 4rem;
+        height: 75%;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+
+            &__score {
+                font-size: 2.5rem;
+            }
+            
+            &__bar {
+                background: grey;
+                width: 80%;
+            }
+    
+            &__imdb__bar {
+                height: 17rem;
+            }
+
+            &__rottentomatoes__bar {
+                height: 23rem;
+            }
+
+            &__metacritic__bar {
+                height: 20rem;
+            }
+        }
+    }
+}
+
+
